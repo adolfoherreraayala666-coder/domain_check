@@ -1,15 +1,104 @@
 dominio = input("dominio:")
-d1 = "service@paypal.com.mx"
-d2 = "info@mercadopago.com"
-d3 = "no-responder@mercadolibre.com"
-d4 = "noreply-purchases@youtube.com"
-d5 = "noreply@steampowered.com"
-d6 = "info@mail.fondeadora.app"
-d7 = "noreply@didiglobal.com"
-d8 = "noreply@accounts.google.com"
-d9 = "googleplay-noreply@google.com"
-d10 = "notifications@discord.com"
-if dominio in [d1,d2,d3,d4,d5,d6,d7,d8,d9,d10]:
+dominios_seguros = [
+    "noreply@google.com",
+    "no-reply@google.com",
+    "notifications@google.com",
+    "support@google.com",
+    "security@google.com",
+    "noreply@accounts.google.com",
+    "noreply@googlemail.com",
+    "noreply@plus.google.com",
+    "noreply@googleplay.com",
+    "no-reply@googleplay.com",
+    "noreply@googleads.com",
+    "no-reply@googleads.com",
+    "noreply@googleanalytics.com",
+    "noreply@googlecloud.com",
+    "no-reply@googlecloud.com",
+    "noreply@googleforwork.com",
+    "noreply@google.com.mx",
+    "noreply@android.com",
+    "noreply@youtube.com",
+    "no-reply@youtube.com",
+    "noreply@googlepay.com",
+    "no-reply@googlepay.com",
+    "noreply@payments.google.com",
+    "no-reply@payments.google.com",
+    "noreply@chromebook.com",
+    "noreply@withgoogle.com",
+    "noreply@apps.google.com",
+    "noreply@workspace.google.com",
+    "no-reply@workspace.google.com",
+    "noreply@notifications.google.com",
+    "no-reply@notifications.google.com",
+    "noreply@mailer.google.com",
+    "no-reply@mailer.google.com",
+    "noreply@g.co",
+    "no-reply@g.co",
+    "updates@g.co",
+    "security@g.co",
+    "verify@g.co",
+    "noreply@googleapis.com",
+    "no-reply@googleapis.com",
+    "noreply@youtube.com",
+    "no-reply@youtube.com",
+    "noreply@googleplay.com",
+    "noreply@youtube.com", 
+    "no-reply@youtube.com"
+"noreply@googleplay.com",
+ "no-reply@googleplay.com",
+"noreply@googleads.com", 
+"no-reply@googleads.com"
+"noreply@googleanalytics.com", 
+"no-reply@googleanalytics.com"
+"noreply@googlecloud.com",
+ "no-reply@googlecloud.com",
+"noreply@android.com", 
+"no-reply@android.com"
+"noreply@chromebook.com", 
+"no-reply@chromebook.com"
+"noreply@googlepay.com", 
+"no-reply@googlepay.com"
+"noreply@payments.google.com", 
+"no-reply@payments.google.com"
+"noreply@workspace.google.com", 
+"no-reply@workspace.google.com"
+"noreply@apps.google.com", 
+"no-reply@apps.google.com"
+"noreply@withgoogle.com",
+ "no-reply@withgoogle.com"
+"noreply@googleforwork.com",
+"noreply@googletravel.com",
+"noreply@googlemaps.com",
+ "noreply@maps.google.com"
+"noreply@store.google.com", 
+"no-reply@store.google.com"
+"noreply@nest.google.com", 
+"no-reply@nest.google.com"
+"noreply@googlephotos.com", 
+"no-reply@googlephotos.com"
+"noreply@blogger.com", 
+"no-reply@blogger.com"
+"noreply@youtube-noreply.com"
+"noreply@yt.be",
+"noreply@music.youtube.com", 
+"no-reply@music.youtube.com"
+"noreply@tv.youtube.com", 
+"no-reply@tv.youtube.com"
+"noreply@support.youtube.com", 
+"no-reply@support.youtube.com"
+"noreply@studio.youtube.com", 
+"no-reply@studio.youtube.com"
+"noreply@gmail.com", 
+"no-reply@gmail.com"
+"noreply@mailer.google.com", 
+"no-reply@mailer.google.com",
+"noreply@developers.google.com", 
+"no-reply@developers.google.com"
+"noreply@googleapis.com", 
+"no-reply@googleapis.com"
+]
+if dominio in dominios_seguros:
     print("dominio seguro")
 else:
     print("fuchi kk")
